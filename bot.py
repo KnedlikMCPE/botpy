@@ -11,4 +11,4 @@ async def on_ready():
 async def ping(message):
     await message.send('pong')
 
-client.run('ODIwMzI0MDc5NTE2MjU0MjIw.YEzgVQ.H5fRyiMktiYAlAqckZ6JTTA5UZ0')
+client.run('ODIwMzI0MDc5NTE2MjU0MjIw.YEzgVQ.XeJN4Tr1A_SGeX6RiSO4_VUmDwg')
