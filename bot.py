@@ -1,21 +1,14 @@
 import discord
 from discord.ext import commands
 
-client=commands.Bot(command_prefix='!')
+client = commands.Bot(command_prefix = '/')
+
 @client.event
 async def on_ready():
-    print("Bot is ready")
-
-@client.event
-async def on_member_join(member):
-    print("A wild",member,"appeared")
-
-@client.event
-async def on_member_remove(member):
-    print("The wild",member,"disappeared")
+    print('Bot is ready.')
 
 @client.command()
-async def ping(ctx):
-    await ctx.send(f"Hey! I am up and running with a ping of {round(client.latency*1000)}ms.")
+async def ping(message):
+    await message.send('pong')
 
-client.run('')   #Place token between the ''
+client.run('ODIwMzI0MDc5NTE2MjU0MjIw.YEzgVQ.H5fRyiMktiYAlAqckZ6JTTA5UZ0')
